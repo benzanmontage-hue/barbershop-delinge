@@ -1,47 +1,639 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/barbershop_de_linge_logo.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barbershop De Linge Elst | Kapper, Barbier & Tattoo Studio</title>
-    <link rel="canonical" href="https://barbershopdelinge.nl/" />
-    <meta name="description" content="Premium kapper en barbershop in Elst. Specialist in herenkapsels, baardverzorging, fade knippen en tattoos. Sinds 2007 jouw barbier in Elst." />
-    <meta name="keywords" content="kapper elst, barbershop elst, barbier elst, herenkapper elst, fade knippen elst, knippen elst, baardverzorging elst, tattoo elst, tattoo studio elst, kapsalon elst, barbier service elst, moderne herenkapsels elst, beste kapper elst, tondeuse knippen elst" />
-    <meta name="author" content="Barbershop De Linge" />
-    <meta name="geo.region" content="NL-GE" />
-    <meta name="geo.placename" content="Elst" />
-    <meta name="geo.position" content="51.9177;5.8431" />
-    <meta name="ICBM" content="51.9177, 5.8431" />
-    <meta property="og:title" content="Barbershop De Linge Elst | Kapper, Barbier & Tattoo Studio" />
-    <meta property="og:description" content="Premium kapper en barbershop in Elst. Specialist in herenkapsels, baardverzorging, fade knippen en tattoos. Sinds 2007 jouw barbier in Elst." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://barbershopdelinge.nl" />
-    <meta property="og:image" content="https://barbershopdelinge.nl/barbershop_de_linge_logo.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="nl_NL" />
-    <meta property="og:site_name" content="Barbershop De Linge Elst" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Barbershop De Linge Elst | Kapper, Barbier & Tattoo Studio" />
-    <meta name="twitter:description" content="Premium kapper en barbershop in Elst. Specialist in herenkapsels, baardverzorging, fade knippen en tattoos. Sinds 2007 jouw barbier in Elst." />
-    <meta name="twitter:image" content="https://barbershopdelinge.nl/barbershop_de_linge_logo.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2JJB2HQZY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-E2JJB2HQZY');
-    </script>
-    <script type="module" crossorigin src="/assets/index-Dn8D93Py.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/react-vendor-YsBxPMQB.js">
-    <link rel="modulepreload" crossorigin href="/assets/lucide-a6fUzaSK.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-DEBcHxLy.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbershop De Linge — Kapper, Barbier & Tattoo in Elst</title>
+<meta name="description" content="Barbershop De Linge in Elst sinds 2014. Premium herenkapsels, baardverzorging, gezichtsbehandelingen en tattoos. Dorpsstraat 57, Elst. Open 6 dagen — boek online of loop binnen.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barbershop De Linge — Kapper, Barbier & Tattoo in Elst">
+<meta property="og:description" content="Premium herenkapsels, baardverzorging, gezichtsbehandelingen en tattoos. Dorpsstraat 57, Elst. Sinds 2014.">
+<meta property="og:image" content="https://barbershopdelinge.nl/images/logo.jpg">
+<meta property="og:url" content="https://barbershopdelinge.nl/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barbershop De Linge — Kapper, Barbier & Tattoo in Elst">
+<meta name="twitter:description" content="Premium herenkapsels, baardverzorging, gezichtsbehandelingen en tattoos. Dorpsstraat 57, Elst.">
+<meta name="twitter:image" content="https://barbershopdelinge.nl/images/logo.jpg">
+<link rel="canonical" href="https://barbershopdelinge.nl/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230e0c09'/><text x='32' y='43' font-size='32' font-family='serif' font-style='italic' fill='%23d97706' text-anchor='middle'>L</text></svg>">
+<style>
+:root{
+  --bg:#faf7f2;
+  --ink:#14100b;
+  --muted:#7a7268;
+  --accent:#d97706;
+  --accent-dark:#b45309;
+  --card:#ffffff;
+  --line:rgba(20,16,11,0.08);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;background:rgba(14,12,9,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 0;transition:all .3s}
+nav .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:#fff}
+.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:.78rem;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.75);transition:color .3s}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--accent);color:#fff!important;padding:10px 20px;border-radius:100px;transition:transform .3s,background .3s}
+.nav-cta:hover{background:var(--accent-dark);transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(14,12,9,.72),rgba(14,12,9,.88)),url('images/interieur.png') center/cover no-repeat}
+.hero .container{display:block;padding-top:70px;padding-bottom:70px}
+.hero-content{max-width:760px;text-align:center;margin:0 auto}
+.eyebrow{display:inline-block;border:2px solid var(--accent);padding:10px 22px;font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fbbf24;margin-bottom:24px}
+.hero h1{color:#fff;font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.02;letter-spacing:1px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .divider{width:80px;height:3px;background:var(--accent);margin:22px auto}
+.hero .tagline{color:rgba(255,255,255,.92);font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.hero p{color:rgba(255,255,255,.78);font-size:1rem;font-weight:300;max-width:600px;margin:22px auto 30px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:100px;font-size:.84rem;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;cursor:pointer;border:none;transition:all .3s cubic-bezier(.22,1,.36,1)}
+.btn-dark{background:var(--accent);color:#fff}
+.btn-dark:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.25)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-2px)}
+
+/* ── TRUST ── */
+.trust{background:var(--ink);color:#fff;padding:22px 0}
+.trust .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:.82rem;letter-spacing:.5px;opacity:.92}
+.trust-item b{color:var(--accent);font-weight:700}
+
+/* ── SECTIES ── */
+.section{padding:84px 0}
+.section-head{max-width:680px;margin:0 auto 56px;text-align:center}
+.label{font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12;letter-spacing:-.5px}
+.sub{color:var(--muted);font-weight:300;margin-top:16px}
+
+/* ── DIENSTEN ── */
+.diensten-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.dienst{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.dienst:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(20,16,11,.12)}
+.dienst img{height:220px;object-fit:cover;width:100%}
+.dienst-body{padding:26px}
+.dienst h3{font-size:1.05rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.dienst p{color:var(--muted);font-size:.9rem;line-height:1.6}
+.dienst .boek{margin-top:18px;display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-dark)}
+
+/* ── PRIJZEN ── */
+.prijzen{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prijs-cat{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:22px;background:var(--card)}
+.prijs-cat-head{display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;padding:18px 26px}
+.prijs-cat-head .bar{width:4px;height:34px;background:var(--accent);border-radius:2px}
+.prijs-cat-head h3{font-size:1.05rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.prijs-cat-body{padding:10px 26px}
+.prijs-row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.prijs-row:last-child{border-bottom:none}
+.prijs-row .naam{font-weight:600;font-size:.95rem}
+.prijs-row .desc{color:var(--muted);font-size:.82rem;display:block;margin-top:2px;font-weight:400}
+.prijs-row .prijs{font-family:var(--serif);font-weight:700;color:var(--accent-dark);font-size:1.1rem;white-space:nowrap;margin-left:16px}
+
+/* ── TEAM ── */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.team-card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-align:center;padding-bottom:26px;transition:transform .35s,box-shadow .35s}
+.team-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(20,16,11,.12)}
+.team-photo{width:100%;aspect-ratio:1/1;overflow:hidden;margin-bottom:20px;background:var(--line)}
+.team-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.team-card h3{font-size:1.25rem;font-weight:800;padding:0 18px}
+.team-card .rol{color:var(--accent-dark);font-size:.8rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin:5px 0 8px;padding:0 18px}
+.team-card .exp{color:var(--muted);font-size:.85rem;padding:0 18px}
+.team-card .spec{list-style:none;margin:14px 18px 0;padding:0}
+.team-card .spec li{font-size:.8rem;color:var(--muted);padding:3px 0}
+.team-card .spec li::before{content:'★';color:var(--accent);margin-right:7px;font-size:.7rem}
+.team-book{margin-top:18px;display:inline-block;padding:10px 22px;border-radius:100px;background:var(--accent);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;transition:background .3s}
+.team-book:hover{background:var(--accent-dark)}
+
+/* ── OVER ONS ── */
+.over-ons{background:linear-gradient(rgba(14,12,9,.82),rgba(14,12,9,.88)),url('images/interieur.png') center/cover no-repeat;color:#fff}
+.over-ons h2,.over-ons .label{color:#fff}
+.over-ons .label{color:var(--accent)}
+.over-ons .cols{max-width:860px;margin:0 auto;font-size:1.04rem;color:rgba(255,255,255,.82)}
+.over-ons .cols p{margin-bottom:18px}
+.over-ons blockquote{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--accent);margin-top:26px;padding-left:18px;border-left:3px solid var(--accent)}
+
+/* ── FAQ ── */
+.faq-wrap{max-width:760px;margin:0 auto}
+.faq-item{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--card);overflow:hidden}
+.faq-item summary{cursor:pointer;padding:20px 24px;font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.4rem;color:var(--accent);transition:transform .3s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{padding:0 24px 20px;color:var(--muted);font-size:.92rem}
+
+/* ── CONTACT / OPENINGSTIJDEN ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;margin:0 auto}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px}
+.contact-card h3{font-family:var(--serif);font-size:1.4rem;margin-bottom:20px}
+.contact-row{display:flex;align-items:flex-start;gap:14px;padding:10px 0}
+.contact-row .ico{width:38px;height:38px;border-radius:10px;background:rgba(217,119,6,.1);display:flex;align-items:center;justify-content:center;color:var(--accent-dark);font-size:1.1rem;flex-shrink:0}
+.contact-row .ttl{font-weight:700;font-size:.86rem;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}
+.contact-row .val{font-weight:600;font-size:.98rem}
+.contact-row a.val:hover{color:var(--accent-dark)}
+.ot-card{max-width:520px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.ot-status{display:flex;align-items:center;gap:10px;padding:16px 22px;font-size:.92rem;font-weight:700;border-bottom:1px solid var(--line)}
+.ot-status .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.ot-status.open{background:rgba(46,160,67,.07)}
+.ot-status.open .dot{background:#2ea043;box-shadow:0 0 0 4px rgba(46,160,67,.15)}
+.ot-status.closed{background:rgba(192,57,43,.05)}
+.ot-status.closed .dot{background:#c0392b;box-shadow:0 0 0 4px rgba(192,57,43,.12)}
+.ot-row{display:flex;align-items:center;justify-content:space-between;padding:13px 22px;border-bottom:1px solid var(--line)}
+.ot-row:last-child{border-bottom:none}
+.ot-row .naam{font-weight:500}
+.ot-row .tijd{font-weight:600;color:var(--accent-dark)}
+.ot-row.is-today{background:rgba(217,119,6,.09)}
+.ot-row.is-today .naam{font-weight:700}
+.ot-row.is-closed{opacity:.45}
+.ot-row.is-closed .tijd{color:var(--muted)}
+
+/* ── CTA ── */
+.cta{background:var(--ink);color:#fff;text-align:center;padding:84px 0}
+.cta h2{color:#fff}
+.cta .sub{color:rgba(255,255,255,.65)}
+.cta .btn-dark{background:var(--accent)}
+.cta .btn-dark:hover{background:var(--accent-dark)}
+
+/* ── FOOTER ── */
+footer{background:#0e0c09;color:rgba(255,255,255,.72);padding:60px 0 30px}
+footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer h4{color:#fff;font-family:var(--serif);font-size:1.05rem;margin-bottom:16px}
+footer .brand{font-family:var(--serif);font-size:1.4rem;margin-bottom:12px}
+footer p{font-size:.9rem;color:rgba(255,255,255,.6)}
+footer a{display:block;color:rgba(255,255,255,.65);font-size:.88rem;padding:7px 0;transition:color .3s}
+footer a:hover{color:var(--accent)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── BACK TO TOP ── */
+#top{position:fixed;bottom:30px;right:30px;width:46px;height:46px;border-radius:50%;background:var(--accent);color:#fff;border:none;font-size:18px;cursor:pointer;opacity:0;visibility:hidden;transition:all .4s;z-index:90}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:var(--accent-dark)}
+
+/* ── HAMBURGER / MOBILE MENU ── */
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:12px;z-index:110}
+.hamburger span{width:24px;height:2px;background:#fff;transition:all .3s}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#0e0c09;border-top:1px solid rgba(255,255,255,.1);flex-direction:column;padding:10px 24px 16px;gap:2px;z-index:99}
+.mobile-menu a{display:block;padding:13px 0;font-size:.9rem;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.85);border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu .nav-cta{margin-top:10px;text-align:center;border-radius:100px}
+.mobile-menu.open{display:flex}
+
+/* ── MOBILE STICKY BAR ── */
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:95;background:#0e0c09;padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -6px 24px rgba(0,0,0,.3)}
+.mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;border-radius:12px;font-size:.9rem;font-weight:700;letter-spacing:.5px;text-decoration:none}
+.mobile-bar .bar-call{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.mobile-bar .bar-book{background:var(--accent);color:#fff}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:860px){
+  .mobile-bar{display:flex}
+  .diensten-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  footer .grid{grid-template-columns:1fr}
+  body{padding-bottom:70px}
+}
+@media(max-width:640px){
+  .section{padding:56px 0}
+  .section-head{margin-bottom:36px}
+  .team-grid{grid-template-columns:1fr}
+  .hero{min-height:auto;padding:60px 0}
+  #top{bottom:84px;right:14px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Barbershop",
+  "@id": "https://barbershopdelinge.nl/#barbershop",
+  "name": "Barbershop De Linge",
+  "alternateName": "Barbershop & Tattoos De Linge",
+  "description": "Premium kapper en barbier in Elst sinds 2014. Herenkapsels, fade knippen, baardverzorging, gezichtsbehandelingen en tattoos. Dorpsstraat 57, Elst.",
+  "url": "https://barbershopdelinge.nl/",
+  "telephone": "+31619939261",
+  "email": "info@barbershopdelinge.nl",
+  "image": "https://barbershopdelinge.nl/images/logo.jpg",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dorpsstraat 57",
+    "addressLocality": "Elst",
+    "addressRegion": "Gelderland",
+    "postalCode": "6661 EG",
+    "addressCountry": "NL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.9177,
+    "longitude": 5.8431
+  },
+  "sameAs": [
+    "https://www.facebook.com/barbershopdelinge",
+    "https://www.instagram.com/barbershopdelinge"
+  ],
+  "areaServed": ["Elst", "Arnhem", "Nijmegen", "Overbetuwe", "Gelderland"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "12:00", "closes": "17:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:30", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:30", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:30", "closes": "17:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:30", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "18:00"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Diensten & prijzen",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Knippen volwassenen"}, "price": "27.50", "priceCurrency": "EUR"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Knippen & korte baard"}, "price": "35.00", "priceCurrency": "EUR"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Knippen & lange baard"}, "price": "40.00", "priceCurrency": "EUR"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Baard scheren (hot towel)"}, "price": "20.00", "priceCurrency": "EUR"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Special Treatment"}, "price": "50.00", "priceCurrency": "EUR"}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Moet ik een afspraak maken bij Barbershop De Linge?", "acceptedAnswer": {"@type": "Answer", "text": "Walk-ins zijn altijd welkom. Op drukke dagen (vrijdag en zaterdag) raden we een afspraak aan zodat je niet hoeft te wachten. Boeken kan makkelijk online via Fresha."}},
+    {"@type": "Question", "name": "Wat kost een knipbeurt bij Barbershop De Linge?", "acceptedAnswer": {"@type": "Answer", "text": "Knippen volwassenen kost €27,50. Knippen & korte baard €35,00 en knippen & lange baard €40,00. Bekijk de volledige prijslijst op de website."}},
+    {"@type": "Question", "name": "Doet Barbershop De Linge ook baarden?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. We doen baard scheren (Italian hot towel shave) vanaf €20,00, baard modelleren vanaf €17,50 en snor modelleren vanaf €15,00."}},
+    {"@type": "Question", "name": "Doet Barbershop De Linge ook tattoos?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, Barbershop & Tattoos De Linge heeft ervaren tattoo-artiesten voor kleine, betekenisvolle designs tot grootschalig custom werk."}},
+    {"@type": "Question", "name": "Wanneer is Barbershop De Linge open?", "acceptedAnswer": {"@type": "Answer", "text": "Maandag 12:00-17:00, dinsdag en woensdag 09:30-18:00, donderdag 09:30-17:30, vrijdag en zaterdag 09:30-18:00. Zondag gesloten."}},
+    {"@type": "Question", "name": "Waar zit Barbershop De Linge?", "acceptedAnswer": {"@type": "Answer", "text": "Dorpsstraat 57, 6661 EG in Elst (Gelderland), tussen Arnhem en Nijmegen. Parkeren kan in de buurt van de Dorpsstraat."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="brand">Barbershop <span>De Linge</span></div>
+    <div class="nav-links">
+      <a href="#diensten">Diensten</a>
+      <a href="#prijzen">Prijzen</a>
+      <a href="#team">Team</a>
+      <a href="#over-ons">Over ons</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="nav-cta">Afspraak maken</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#diensten">Diensten</a>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#team">Team</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="nav-cta">Afspraak maken</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Sinds 2014</div>
+      <h1>Barbershop <em>De Linge</em></h1>
+      <div class="divider"></div>
+      <div class="tagline">Dé plek voor herenkapsels en scheerbeurten in Elst</div>
+      <p>Ontdek Barbershop De Linge — dé plek voor herenkapsels, baardverzorging en tattoos in Elst. Onze ervaren barbiers leveren stijlvolle en persoonlijke service voor een zelfverzekerde look.</p>
+      <div class="hero-actions">
+        <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="btn btn-dark">Maak een afspraak</a>
+        <a href="#diensten" class="btn btn-ghost">Onze diensten</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-item"><b>Sinds 2014</b> in Elst</div>
+    <div class="trust-item"><b>6</b> dagen open</div>
+    <div class="trust-item"><b>Walk-ins</b> welkom</div>
+    <div class="trust-item"><b>Kapper</b> + barbier + tattoos</div>
+  </div>
+</div>
+
+<!-- DIENSTEN -->
+<section class="section" id="diensten">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Onze diensten</div>
+      <h2>Waar we goed in zijn</h2>
+      <p class="sub">Premium kapper- en barbierdiensten voor de moderne man.</p>
+    </div>
+    <div class="diensten-grid">
+      <div class="dienst reveal">
+        <img src="images/kapper.png" alt="Moderne herenkapsels en fade knippen bij barbershop Elst" loading="lazy">
+        <div class="dienst-body">
+          <h3>Kapper &amp; Barbier</h3>
+          <p>Op zoek naar een kapper en barbier in één? We knippen je haar en stylen je baard helemaal zoals jij dat wilt. Denk aan de Premium Gents Cut of de Barbers Haircut &amp; Clean Shave.</p>
+          <a class="boek" href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener">Boek een afspraak →</a>
+        </div>
+      </div>
+      <div class="dienst reveal">
+        <img src="images/gezicht.png" alt="Professionele gezichtsbehandeling voor mannen in Elst" loading="lazy">
+        <div class="dienst-body">
+          <h3>Gezichtsbehandeling</h3>
+          <p>Onze gezichtsbehandelingen zijn speciaal ontwikkeld voor de mannenhuid. We reinigen, verzorgen en verfrissen je huid voor een optimaal resultaat.</p>
+          <a class="boek" href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener">Boek een afspraak →</a>
+        </div>
+      </div>
+      <div class="dienst reveal">
+        <img src="images/tattoo.png" alt="Tattoo kunst en custom designs bij tattoo studio Elst" loading="lazy">
+        <div class="dienst-body">
+          <h3>Tattoos</h3>
+          <p>Professionele tattoo-kunst van ervaren artiesten. Van kleine, betekenisvolle designs tot grootschalig custom werk — met precisie en creativiteit in een veilige omgeving.</p>
+          <a class="boek" href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener">Boek een afspraak →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIJZEN -->
+<section class="section prijzen" id="prijzen">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Prijzen</div>
+      <h2>Transparant, zonder verrassingen</h2>
+      <p class="sub">Ontdek onze professionele diensten en prijzen.</p>
+    </div>
+    <div class="reveal" style="max-width:860px;margin:0 auto">
+
+      <div class="prijs-cat">
+        <div class="prijs-cat-head"><div class="bar"></div><h3>Knippen</h3></div>
+        <div class="prijs-cat-body">
+          <div class="prijs-row"><div><span class="naam">Knippen volwassenen</span><span class="desc">Wassen, knippen en modelleren</span></div><span class="prijs">€27,50</span></div>
+          <div class="prijs-row"><div><span class="naam">Knippen &amp; korte baard</span><span class="desc">Wassen, knippen en korte baard modelleren</span></div><span class="prijs">€35,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Knippen &amp; lange baard</span><span class="desc">Knippen en baard modelleren / scheren</span></div><span class="prijs">€40,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Taperfade only</span><span class="desc">Alleen de zijkanten en de achterkant</span></div><span class="prijs">€20,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Studenten</span><span class="desc">Wassen, knippen, föhnen (op vertoon studentenkaart)</span></div><span class="prijs">€25,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Kinderen t/m 14 jr</span><span class="desc">Wassen, knippen en modelleren</span></div><span class="prijs">€22,50</span></div>
+          <div class="prijs-row"><div><span class="naam">Special Treatment</span><span class="desc">Knippen, scheren, neus- en oorhaar waxen, gezichtsbehandeling</span></div><span class="prijs">€50,00</span></div>
+        </div>
+      </div>
+
+      <div class="prijs-cat">
+        <div class="prijs-cat-head"><div class="bar"></div><h3>Scheren</h3></div>
+        <div class="prijs-cat-body">
+          <div class="prijs-row"><div><span class="naam">Baard scheren</span><span class="desc">Italian hot towel shave</span></div><span class="prijs">€20,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Contouren</span><span class="desc">Contouren scheren</span></div><span class="prijs">€15,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Opscheren rondom</span><span class="desc">Baard rondom scheren</span></div><span class="prijs">€20,00</span></div>
+          <div class="prijs-row"><div><span class="naam">Baard &amp; snor modelleren</span><span class="desc">Modelleren en styling</span></div><span class="prijs">€20,00</span></div>
+        </div>
+      </div>
+
+      <div class="prijs-cat">
+        <div class="prijs-cat-head"><div class="bar"></div><h3>Baard &amp; snor trimmen</h3></div>
+        <div class="prijs-cat-body">
+          <div class="prijs-row"><div><span class="naam">Baard modelleren (knip)</span><span class="desc">Modelleren, contouren en baardolie</span></div><span class="prijs">€17,50</span></div>
+          <div class="prijs-row"><div><span class="naam">Snor modelleren (knip)</span><span class="desc">Modelleren en snorolie</span></div><span class="prijs">€15,00</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Ons team</div>
+      <h2>De mannen achter de stoel</h2>
+      <p class="sub">Meesterkappers en specialisten die klaarstaan voor jou.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo"><img src="images/ozemarow.png" alt="Ozemarow - Master Barber & Eigenaar bij Barbershop De Linge Elst" loading="lazy"></div>
+        <h3>Ozemarow</h3>
+        <div class="rol">Master Barber &amp; Eigenaar</div>
+        <div class="exp">18+ jaar ervaring</div>
+        <ul class="spec"><li>Klassiek knippen</li><li>Baardverzorging</li><li>Traditional shaving</li></ul>
+        <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="team-book">Boek met Ozemarow</a>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo"><img src="images/josefien.png" alt="Josefien - Barber & Stylist bij Barbershop De Linge Elst" loading="lazy"></div>
+        <h3>Josefien</h3>
+        <div class="rol">Barber &amp; Stylist</div>
+        <div class="exp">8 jaar ervaring</div>
+        <ul class="spec"><li>Creatieve cuts</li><li>Beard design</li><li>Hair tattoos</li></ul>
+        <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="team-book">Boek met Josefien</a>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo"><img src="images/arjan.png" alt="Arjan Zemar - Barbier bij Barbershop De Linge Elst" loading="lazy"></div>
+        <h3>Arjan Zemar</h3>
+        <div class="rol">Barbier</div>
+        <div class="exp">Jong &amp; getalenteerd</div>
+        <ul class="spec"><li>Klassiek knippen</li><li>Baardverzorging</li><li>Traditional shaving</li></ul>
+        <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="team-book">Boek met Arjan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVER ONS -->
+<section class="section over-ons" id="over-ons">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Kapper &amp; barbier in Elst</div>
+      <h2>Wie zijn wij</h2>
+    </div>
+    <div class="reveal cols">
+      <p>Barbershop De Linge is dé specialist voor knippen en baardverzorging in Elst sinds 2014. Als ervaren kapper en barbier bieden we professionele herenkapsels, fade knippen, traditioneel scheren en moderne baardverzorging.</p>
+      <p>Ons team van meesterkappers en barbiers heeft jarenlange ervaring in het knippen van herenkapsels. Of je nu komt voor een klassieke coupe, een strakke fade, een gezichtsbehandeling of professionele baardverzorging — bij onze kapper in Elst ben je aan het juiste adres.</p>
+      <p>Bij Barbershop &amp; Tattoos De Linge geloven we in vakmanschap, precisie en persoonlijke aandacht. Elk teamlid is getraind in de nieuwste technieken en klassieke methoden. We nemen de tijd voor elke klant en zorgen ervoor dat je met een glimlach de deur uitloopt.</p>
+      <blockquote>“De knipbeurt bij Barbershop De Linge is een momentje genieten.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Veelgestelde vragen</div>
+      <h2>Goed om te weten</h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <details class="faq-item">
+        <summary>Moet ik een afspraak maken?</summary>
+        <p>Walk-ins zijn altijd welkom. Op drukke dagen (vrijdag en zaterdag) raden we een afspraak aan zodat je niet hoeft te wachten. Boeken kan makkelijk online via Fresha.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wat kost een knipbeurt?</summary>
+        <p>Knippen volwassenen kost €27,50. Knippen &amp; korte baard €35,00 en knippen &amp; lange baard €40,00. Bekijk de volledige prijslijst hierboven.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Doen jullie ook baarden?</summary>
+        <p>Ja. We doen baard scheren (Italian hot towel shave) vanaf €20,00, baard modelleren vanaf €17,50 en snor modelleren vanaf €15,00.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Doen jullie ook tattoos?</summary>
+        <p>Ja, Barbershop &amp; Tattoos De Linge heeft ervaren tattoo-artiesten voor kleine, betekenisvolle designs tot grootschalig custom werk.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wanneer zijn jullie open?</summary>
+        <p>Maandag 12:00–17:00, dinsdag en woensdag 09:30–18:00, donderdag 09:30–17:30, vrijdag en zaterdag 09:30–18:00. Zondag gesloten.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Waar zitten jullie?</summary>
+        <p>Dorpsstraat 57, 6661 EG in Elst (Gelderland), tussen Arnhem en Nijmegen.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Contact</div>
+      <h2>Bezoek onze barbershop</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <h3>Barbershop De Linge</h3>
+        <div class="contact-row">
+          <div class="ico">📍</div>
+          <div><div class="ttl">Adres</div><a class="val" href="https://www.google.com/maps/dir/?api=1&destination=Dorpsstraat+57,6661+EG+Elst" target="_blank" rel="noopener">Dorpsstraat 57<br>6661 EG Elst</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ico">📞</div>
+          <div><div class="ttl">WhatsApp / Bellen</div><a class="val" href="https://wa.me/31619939261" target="_blank" rel="noopener">06 19 93 92 61</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ico">✉️</div>
+          <div><div class="ttl">E-mail</div><a class="val" href="mailto:info@barbershopdelinge.nl">info@barbershopdelinge.nl</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ico">📅</div>
+          <div><div class="ttl">Boeken</div><a class="val" href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener">Boek online via Fresha</a></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="ot-card">
+          <div class="ot-status" id="otStatus"><span class="dot"></span><span id="otText"></span></div>
+          <div class="ot-row" data-day="1"><span class="naam">Maandag</span><span class="tijd">12:00 – 17:00</span></div>
+          <div class="ot-row" data-day="2"><span class="naam">Dinsdag</span><span class="tijd">09:30 – 18:00</span></div>
+          <div class="ot-row" data-day="3"><span class="naam">Woensdag</span><span class="tijd">09:30 – 18:00</span></div>
+          <div class="ot-row" data-day="4"><span class="naam">Donderdag</span><span class="tijd">09:30 – 17:30</span></div>
+          <div class="ot-row" data-day="5"><span class="naam">Vrijdag</span><span class="tijd">09:30 – 18:00</span></div>
+          <div class="ot-row" data-day="6"><span class="naam">Zaterdag</span><span class="tijd">09:30 – 18:00</span></div>
+          <div class="ot-row is-closed" data-day="0"><span class="naam">Zondag</span><span class="tijd">Gesloten</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2 class="reveal">Klaar voor een strakke look?</h2>
+    <p class="sub reveal">Maak vandaag nog een afspraak bij Barbershop De Linge.</p>
+    <div class="reveal" style="margin-top:28px">
+      <a href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener" class="btn btn-dark">Maak een afspraak</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="grid">
+      <div>
+        <div class="brand">Barbershop <span style="color:var(--accent)">De Linge</span></div>
+        <p style="max-width:320px">Premium kapper, barbier en tattoo studio in Elst sinds 2014. Herenkapsels, baardverzorging en gezichtsbehandelingen op de Dorpsstraat 57.</p>
+      </div>
+      <div>
+        <h4>Navigatie</h4>
+        <a href="#diensten">Diensten</a>
+        <a href="#prijzen">Prijzen</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Dorpsstraat+57,6661+EG+Elst" target="_blank" rel="noopener">Dorpsstraat 57, Elst</a>
+        <a href="https://wa.me/31619939261" target="_blank" rel="noopener">06 19 93 92 61</a>
+        <a href="mailto:info@barbershopdelinge.nl">info@barbershopdelinge.nl</a>
+        <a href="https://www.instagram.com/barbershopdelinge" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/barbershopdelinge" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Barbershop De Linge — Elst</span>
+      <span>Dorpsstraat 57 · 6661 EG Elst</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar">
+  <a class="bar-call" href="https://wa.me/31619939261" target="_blank" rel="noopener">📞 Bellen</a>
+  <a class="bar-book" href="https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking" target="_blank" rel="noopener">📅 Afspraak</a>
+</div>
+
+<button id="top" aria-label="Naar boven">↑</button>
+
+<script>
+// Mobiel menu
+const hb=document.getElementById('hamburger'),mm=document.getElementById('mobileMenu');
+hb.addEventListener('click',()=>mm.classList.toggle('open'));
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+
+// Scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Back to top
+const topBtn=document.getElementById('top');
+window.addEventListener('scroll',()=>{topBtn.classList.toggle('show',window.scrollY>600)});
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+// Openingstijden status
+(function(){
+  const hours={0:null,1:['12:00','17:00'],2:['09:30','18:00'],3:['09:30','18:00'],4:['09:30','17:30'],5:['09:30','18:00'],6:['09:30','18:00']};
+  const now=new Date();const d=now.getDay();const t=now.getHours()*60+now.getMinutes();
+  const st=document.getElementById('otStatus'),tx=document.getElementById('otText');
+  const range=hours[d];
+  const todayRow=document.querySelector('.ot-row[data-day="'+d+'"]');
+  if(todayRow)todayRow.classList.add('is-today');
+  let open=false;
+  if(range){const a=+range[0].split(':')[0]*60+(+range[0].split(':')[1]);const b=+range[1].split(':')[0]*60+(+range[1].split(':')[1]);open=t>=a&&t<b;}
+  st.classList.add(open?'open':'closed');
+  tx.textContent=open?'Nu geopend':'Nu gesloten';
+})();
+</script>
+</body>
 </html>
