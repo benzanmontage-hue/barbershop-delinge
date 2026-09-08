@@ -53,7 +53,7 @@ nav .container{display:flex;align-items:center;justify-content:space-between}
 .hero{min-height:92vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(14,12,9,.72),rgba(14,12,9,.88)),url('images/interieur.png') center/cover no-repeat}
 .hero .container{display:block;padding-top:70px;padding-bottom:70px}
 .hero-content{max-width:760px;text-align:center;margin:0 auto}
-.eyebrow{display:inline-block;border:2px solid var(--accent);padding:10px 22px;font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fbbf24;margin-bottom:24px}
+.eyebrow{display:inline-block;border:2px solid var(--accent);padding:10px 22px;font-size:.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fbbf24;margin-bottom:24px}
 .hero h1{color:#fff;font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.02;letter-spacing:1px}
 .hero h1 em{font-style:italic;color:var(--accent)}
 .hero .divider{width:80px;height:3px;background:var(--accent);margin:22px auto}
@@ -75,7 +75,7 @@ nav .container{display:flex;align-items:center;justify-content:space-between}
 /* ── SECTIES ── */
 .section{padding:84px 0}
 .section-head{max-width:680px;margin:0 auto 56px;text-align:center}
-.label{font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.label{font-size:.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
 h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12;letter-spacing:-.5px}
 .sub{color:var(--muted);font-weight:300;margin-top:16px}
 
@@ -87,14 +87,17 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);l
 .dienst-body{padding:26px}
 .dienst h3{font-size:1.05rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
 .dienst p{color:var(--muted);font-size:.9rem;line-height:1.6}
-.dienst .boek{margin-top:18px;display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-dark)}
+.dienst .boek{margin-top:16px;display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;border:1px solid var(--accent);border-radius:8px;font-size:.8rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-dark)}
 
 /* ── PRIJZEN ── */
 .prijzen{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .prijs-cat{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:22px;background:var(--card)}
-.prijs-cat-head{display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;padding:18px 26px}
-.prijs-cat-head .bar{width:4px;height:34px;background:var(--accent);border-radius:2px}
-.prijs-cat-head h3{font-size:1.05rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.prijs-cat summary{list-style:none;display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;padding:18px 26px;cursor:pointer}
+.prijs-cat summary::-webkit-details-marker{display:none}
+.prijs-cat summary .bar{width:4px;height:30px;background:var(--accent);border-radius:2px}
+.prijs-cat summary h3{font-size:1.05rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.prijs-cat summary .chev{margin-left:auto;color:var(--accent);font-size:1.4rem;line-height:1;transition:transform .25s}
+.prijs-cat[open] summary .chev{transform:rotate(45deg)}
 .prijs-cat-body{padding:10px 26px}
 .prijs-row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
 .prijs-row:last-child{border-bottom:none}
@@ -114,7 +117,7 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);l
 .team-card .spec{list-style:none;margin:14px 18px 0;padding:0}
 .team-card .spec li{font-size:.8rem;color:var(--muted);padding:3px 0}
 .team-card .spec li::before{content:'★';color:var(--accent);margin-right:7px;font-size:.7rem}
-.team-book{margin-top:18px;display:inline-block;padding:10px 22px;border-radius:100px;background:var(--accent);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;transition:background .3s}
+.team-book{margin-top:18px;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:100px;background:var(--accent);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;transition:background .3s}
 .team-book:hover{background:var(--accent-dark)}
 
 /* ── OVER ONS ── */
@@ -171,9 +174,10 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);l
 .slideshow-nav:hover{background:var(--accent)}
 .slideshow-nav.prev{left:14px}
 .slideshow-nav.next{right:14px}
-.slideshow-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;flex-wrap:wrap}
-.slideshow-dots button{width:9px;height:9px;border-radius:50%;border:none;background:var(--line);cursor:pointer;padding:0;transition:all .3s}
-.slideshow-dots button.active{background:var(--accent);transform:scale(1.35)}
+.slideshow-dots{display:flex;justify-content:center;gap:4px;margin-top:14px;flex-wrap:wrap}
+.slideshow-dots button{width:24px;height:24px;border-radius:50%;border:none;background:transparent;cursor:pointer;padding:0;display:inline-flex;align-items:center;justify-content:center}
+.slideshow-dots button::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--line);display:block;transition:all .25s}
+.slideshow-dots button.active::before{background:var(--accent);transform:scale(1.4)}
 
 /* ── CTA ── */
 .cta{background:var(--ink);color:#fff;text-align:center;padding:84px 0}
@@ -188,7 +192,7 @@ footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bott
 footer h4{color:#fff;font-family:var(--serif);font-size:1rem;margin-bottom:12px}
 footer .brand{font-family:var(--serif);font-size:1.25rem;margin-bottom:10px}
 footer p{font-size:.88rem;color:rgba(255,255,255,.6)}
-footer a{display:block;color:rgba(255,255,255,.65);font-size:.86rem;padding:4px 0;transition:color .3s}
+footer a{display:block;color:rgba(255,255,255,.65);font-size:.86rem;padding:10px 0;transition:color .3s}
 footer a:hover{color:var(--accent)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:.78rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
@@ -231,9 +235,19 @@ footer a:hover{color:var(--accent)}
   body{padding-bottom:70px}
 }
 @media(max-width:640px){
-  .section{padding:56px 0}
-  .section-head{margin-bottom:36px}
-  .team-grid{grid-template-columns:1fr}
+  .section{padding:44px 0}
+  .section-head{margin-bottom:28px}
+  .team-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -24px;padding:0 24px 8px;-webkit-overflow-scrolling:touch}
+  .team-card{flex:0 0 78%;scroll-snap-align:start;transform:none;opacity:1}
+  .team-photo{aspect-ratio:4/5;margin-bottom:14px}
+  .team-card h3{font-size:1.1rem}
+  .team-card .spec{display:none}
+  .team-card .team-book{margin-top:14px}
+  .dienst img{height:150px}
+  .dienst-body{padding:18px 16px 20px}
+  .dienst h3{font-size:1rem;margin-bottom:6px}
+  .dienst p{font-size:.88rem}
+  footer a{padding:12px 0}
   .hero{min-height:auto;padding:60px 0}
   #top{bottom:84px;right:14px}
 }
@@ -408,8 +422,8 @@ footer a:hover{color:var(--accent)}
     </div>
     <div class="reveal" style="max-width:860px;margin:0 auto">
 
-      <div class="prijs-cat">
-        <div class="prijs-cat-head"><div class="bar"></div><h3>Knippen</h3></div>
+      <details class="prijs-cat" open>
+        <summary><span class="bar"></span><h3>Knippen</h3><span class="chev">+</span></summary>
         <div class="prijs-cat-body">
           <div class="prijs-row"><div><span class="naam">Knippen volwassenen</span><span class="desc">Wassen, knippen en modelleren</span></div><span class="prijs">€27,50</span></div>
           <div class="prijs-row"><div><span class="naam">Knippen &amp; korte baard</span><span class="desc">Wassen, knippen en korte baard modelleren</span></div><span class="prijs">€35,00</span></div>
@@ -419,25 +433,25 @@ footer a:hover{color:var(--accent)}
           <div class="prijs-row"><div><span class="naam">Kinderen t/m 14 jr</span><span class="desc">Wassen, knippen en modelleren</span></div><span class="prijs">€22,50</span></div>
           <div class="prijs-row"><div><span class="naam">Special Treatment</span><span class="desc">Knippen, scheren, neus- en oorhaar waxen, gezichtsbehandeling</span></div><span class="prijs">€50,00</span></div>
         </div>
-      </div>
+      </details>
 
-      <div class="prijs-cat">
-        <div class="prijs-cat-head"><div class="bar"></div><h3>Scheren</h3></div>
+      <details class="prijs-cat">
+        <summary><span class="bar"></span><h3>Scheren</h3><span class="chev">+</span></summary>
         <div class="prijs-cat-body">
           <div class="prijs-row"><div><span class="naam">Baard scheren</span><span class="desc">Italian hot towel shave</span></div><span class="prijs">€20,00</span></div>
           <div class="prijs-row"><div><span class="naam">Contouren</span><span class="desc">Contouren scheren</span></div><span class="prijs">€15,00</span></div>
           <div class="prijs-row"><div><span class="naam">Opscheren rondom</span><span class="desc">Baard rondom scheren</span></div><span class="prijs">€20,00</span></div>
           <div class="prijs-row"><div><span class="naam">Baard &amp; snor modelleren</span><span class="desc">Modelleren en styling</span></div><span class="prijs">€20,00</span></div>
         </div>
-      </div>
+      </details>
 
-      <div class="prijs-cat">
-        <div class="prijs-cat-head"><div class="bar"></div><h3>Baard &amp; snor trimmen</h3></div>
+      <details class="prijs-cat">
+        <summary><span class="bar"></span><h3>Baard &amp; snor trimmen</h3><span class="chev">+</span></summary>
         <div class="prijs-cat-body">
           <div class="prijs-row"><div><span class="naam">Baard modelleren (knip)</span><span class="desc">Modelleren, contouren en baardolie</span></div><span class="prijs">€17,50</span></div>
           <div class="prijs-row"><div><span class="naam">Snor modelleren (knip)</span><span class="desc">Modelleren en snorolie</span></div><span class="prijs">€15,00</span></div>
         </div>
-      </div>
+      </details>
 
     </div>
   </div>
@@ -515,10 +529,7 @@ footer a:hover{color:var(--accent)}
       <h2>Wie zijn wij</h2>
     </div>
     <div class="reveal cols">
-      <p>Barbershop De Linge is dé specialist voor knippen en baardverzorging in Elst sinds 2014. Als ervaren kapper en barbier bieden we professionele herenkapsels, fade knippen, traditioneel scheren en moderne baardverzorging.</p>
-      <p>Ons team van meesterkappers en barbiers heeft jarenlange ervaring in het knippen van herenkapsels. Of je nu komt voor een klassieke coupe, een strakke fade, een gezichtsbehandeling of professionele baardverzorging — bij onze kapper in Elst ben je aan het juiste adres.</p>
-      <p>Bij Barbershop &amp; Tattoos De Linge geloven we in vakmanschap, precisie en persoonlijke aandacht. Elk teamlid is getraind in de nieuwste technieken en klassieke methoden. We nemen de tijd voor elke klant en zorgen ervoor dat je met een glimlach de deur uitloopt.</p>
-      <blockquote>“De knipbeurt bij Barbershop De Linge is een momentje genieten.”</blockquote>
+      <p>Barbershop De Linge is sinds 2014 dé specialist voor herenkapsels, baarden en scheerbeurten in Elst. Vakmanschap, precisie en persoonlijke aandacht — we nemen de tijd voor elke klant.</p>
     </div>
   </div>
 </section>
