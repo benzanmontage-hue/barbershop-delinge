@@ -179,6 +179,10 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);l
 .slideshow-dots button::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--line);display:block;transition:all .25s}
 .slideshow-dots button.active::before{background:var(--accent);transform:scale(1.4)}
 
+/* ── REVIEWS ── */
+.rating-big{font-family:var(--serif);font-size:3.4rem;font-weight:700;line-height:1;color:var(--accent-dark)}
+.stars{color:#f59e0b;font-size:1.5rem;letter-spacing:5px;margin-top:6px}
+
 /* ── CTA ── */
 .cta{background:var(--ink);color:#fff;text-align:center;padding:84px 0}
 .cta h2{color:#fff}
@@ -265,6 +269,11 @@ footer a:hover{color:var(--accent)}
   "email": "info@barbershopdelinge.nl",
   "image": "https://barbershopdelinge.nl/images/logo.jpg",
   "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "36"
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Dorpsstraat 57",
@@ -534,6 +543,24 @@ footer a:hover{color:var(--accent)}
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section class="section" id="reviews" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Reviews</div>
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="reveal" style="max-width:520px;margin:0 auto;text-align:center">
+      <div class="rating-big">4,9</div>
+      <div class="stars">★★★★★</div>
+      <p class="sub" style="margin-top:10px">op basis van 36 Google reviews</p>
+      <div style="margin-top:24px">
+        <a href="https://maps.google.com/?cid=95411846720743701622645697203133991279" target="_blank" rel="noopener" class="btn btn-dark">Bekijk reviews op Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="container">
@@ -646,6 +673,7 @@ footer a:hover{color:var(--accent)}
         <a href="mailto:info@barbershopdelinge.nl">info@barbershopdelinge.nl</a>
         <a href="https://www.instagram.com/barbershopdelinge" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/barbershopdelinge" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://maps.google.com/?cid=95411846720743701622645697203133991279" target="_blank" rel="noopener">Google Reviews</a>
       </div>
     </div>
     <div class="foot-bottom">
