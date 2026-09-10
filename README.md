@@ -7,4 +7,4 @@ Sinds 2014. Kapper, barbier en tattoo studio.
 - `images/` — afbeeldingen
 - `sitemap.xml`, `robots.txt` — SEO
 
-Boeking: https://www.fresha.com/a/barbershop-de-linge-elst-dorpsstraat-57-cdx7j02k/booking
+Boeking: https://barbershopdelinge.setmore.com/
